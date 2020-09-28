@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCKXBZbU1aS5qJyaIEMeTe7kTmobMAs2Q4",
+    authDomain: "chat-app-6abd3.firebaseapp.com",
+    databaseURL: "https://chat-app-6abd3.firebaseio.com",
+    projectId: "chat-app-6abd3",
+    storageBucket: "chat-app-6abd3.appspot.com",
+    messagingSenderId: "550976072636",
+    appId: "1:550976072636:web:fb5a9a07ce7920dd8619b9",
+    measurementId: "G-DNDBV8XHV5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+</head>
+<body>
+    <form onsubmit="return sendMessage();">
+        <input id="message" placeholder="Enter message" autocomplete="off">
+        <input type="submit">
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
