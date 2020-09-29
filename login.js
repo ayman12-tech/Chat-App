@@ -48,6 +48,7 @@ const fb_login=()=>{
         // The signed-in user info.
         var user = result.user;
         console.log(user)
+        window.location.href = "chat-app.html";
         // ...
       }).catch(function(error) {
         // Handle Errors here.
