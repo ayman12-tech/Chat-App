@@ -42,3 +42,8 @@ firebase.database().ref("messages").on("child_removed",function (snapshot){
     //remove message node
     document.getElementById("message-" + snapshot.key).innerHTML="This message has been removed.";
 });
+
+
+
+
+  

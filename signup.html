@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chat-App</title>
     <link rel = "stylesheet"
    type = "text/css"
    href = "style.css" />
-    <meta charset="UTF-8"><meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--CDN of Firebase-->
+   <!--CDN of Firebase-->
 
      <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
@@ -33,7 +32,7 @@
   </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
+    <!--jQuery library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Popper JS -->
@@ -42,9 +41,15 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+
+
+
+
 </head>
 
 <body>
+
 <br>
 <div class="container">
   <div style="text-align:center">
@@ -52,29 +57,29 @@
 <br>
 <br>
     <h2 class="font-weight-bold" id="riz">WELCOME TO CHAT APPLICATION</h2>
-    <h2 class="font-weight-bold" id="riz">LOGIN</h2>
+    <h2 class="font-weight-bold" id="riz">Create your Account</h2>
   </div>
   <div class="row">
     <div  class="column">
     <br>
-      <img id="zir" class="img-fluid" src="signin-image.jpg">
+      <img id="zir" class="img-fluid" src="signup-image.jpg">
     </div>
     <div class="column">
+    
         <label>Email Address</label>
-        <input type="text" id="l_email" placeholder="Enter your email">
+        <input type="text" id="email" placeholder="Enter your email">
         <label>Password</label>
-        <input type="text" id="l_password" placeholder="Enter your password">
+        <input type="text" id="password" placeholder="Enter your password">
         
-       <br>
-        <input onclick="signin()" type="submit" value="Login">
-
+       <br><br>
+        <input onclick="signup()" type="submit" value="Sign Up">
+      
       <br>
-      <p><a href="signup.html" target="_blank">Create an account</a></p>
-            <p> Or <a >Login with Facebook</a></p>
+
     </div>
   </div>
 </div>
-
+<br><br>
 <!--Footer starts-->
 
 <footer class="page-footer font-small">
