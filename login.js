@@ -47,7 +47,7 @@ const fb_login=()=>{
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-        console.log(user)
+        // console.log(user)
         window.location.href = "chat-app.html";
         // ...
       }).catch(function(error) {

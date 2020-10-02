@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat App</title>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "chat.css" />
 
 
 <script>
@@ -25,9 +28,12 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+
+
 </script>
 </head>
 <body>
+  <h1>Chat App! :)</h1>
     <form onsubmit="return sendMessage();">
         <input id="message" placeholder="Enter message" autocomplete="off">
         <input type="submit">
@@ -35,5 +41,22 @@
     <!--create a list-->
     <ul id="messages"></ul>
     <script src="app.js"></script>
+    <!--Footer starts-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="page-footer font-small">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://github.com/ayman12-tech/" target="_blank"> Syeda Ayman Maqsood</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<!--Footer ends-->
 </body>
 </html>
