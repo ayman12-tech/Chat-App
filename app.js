@@ -46,4 +46,14 @@ firebase.database().ref("messages").on("child_removed",function (snapshot){
 
 
 
+let signOut=()=>{
+    firebase.auth().signOut()
+    .then(function() {
+       window.location="index.html"
+        // Sign-out successful.
+      }).catch(function(error) {
+        alert(errorMessage)
+      });
+}
+
   
